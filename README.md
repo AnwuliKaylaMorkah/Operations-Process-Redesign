@@ -25,8 +25,14 @@ flowchart TD
     F --> J
     I --> J
     J --> K[Late Payment Penalties & Missed Discounts]
+```
 
+---
 
+## 3. "After" State: Automated, Control-Driven Workflow
+Centralized intake, automated 3-way matching within a ±2% tolerance threshold, and automated SLA reminders eliminate low-value manual work while strengthening audit controls.
+
+```mermaid
 flowchart TD
     A[Supplier Submits to Dedicated AP Portal / OCR Inbox] --> B[Automated OCR Data Extraction & Duplicate Check]
     B --> C{3-Way Match: PO + Goods Receipt + Invoice}
@@ -36,3 +42,10 @@ flowchart TD
     F --> C
     D --> G[Payment Executed via ERP Before Day 10]
     G --> H[2% Early Payment Discount Captured & Full Audit Trail Logged]
+```
+
+---
+
+## 4. Repository Contents
+* **[Standard Operating Procedure (SOP-AP-001)](./SOP-AP-001-Invoice-Processing.md):** Step-by-step operational guidelines, internal controls, and exception handling rules.
+* **[RACI Matrix & KPI Framework](./RACI-Matrix-and-KPIs.md):** Cross-functional accountability structure and before/after operational metrics.
